@@ -68,6 +68,7 @@ public class MyResource {
             @FormDataParam("file") final FormDataContentDisposition fileDetail) throws Exception {
         Object output = null;
         try {
+        	
             byte[] bytes = IOUtils.toByteArray(uploadedStream);
             try {
             	File jpgFile = new File("F:/WebServiceTestFolder/OutPut.jpg");
